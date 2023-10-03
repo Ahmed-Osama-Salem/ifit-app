@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 // import type {PropsWithChildren} from 'react';
 // import {
 //   SafeAreaView,
@@ -26,6 +26,8 @@ import React from 'react';
 // } from 'react-native/Libraries/NewAppScreen';
 import StackNavigator from './src/navigation/StackNavigator';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
+import SplashScreen from 'react-native-splash-screen';
+import {Platform} from 'react-native';
 // type SectionProps = PropsWithChildren<{
 //   title: string;
 // }>;
@@ -68,6 +70,11 @@ function App(): JSX.Element {
       '968030486797-f9rn0f2dgk2r08dkt7g3eqf5qvvukau9.apps.googleusercontent.com',
   });
 
+  useEffect(() => {
+    if (Platform.OS === 'android') {
+      SplashScreen.hide();
+    }
+  }, []);
   return (
     <StackNavigator />
     // <SafeAreaView style={backgroundStyle}>
