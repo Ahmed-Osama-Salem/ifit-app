@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "968030486797",
+    "project_id": "ifit-app-963ec",
+    "storage_bucket": "ifit-app-963ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968030486797:android:cd7a4370a1ba5b2c0df044",
+        "android_client_info": {
+          "package_name": "com.ifit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968030486797-3s8mcmb6ldutnmo6d5kpeq7vrmpvdln1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ifit",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "968030486797-f9rn0f2dgk2r08dkt7g3eqf5qvvukau9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAypp2d0TPO-OH3XzgLfRA3Cs-tnpkfMXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968030486797-f9rn0f2dgk2r08dkt7g3eqf5qvvukau9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
