@@ -40,17 +40,19 @@ const AuthControl = () => {
       <View style={styles.authHeader}>
         <Text
           style={{
-            fontSize: 22,
-            // fontFamily: 'Nunito_600SemiBold',
+            fontSize: 18,
+            fontFamily: 'Nunito-SemiBold',
+            color: '#231A16',
           }}>
           welcome
         </Text>
         <Text
           style={{
-            fontSize: 16,
-            // fontFamily: 'Nunito_400Regular',
+            fontSize: 14,
+            fontFamily: 'Nunito-Regular',
             paddingHorizontal: 90,
             textAlign: 'center',
+            color: '#231A16',
           }}>
           Click the AdBlock Plus icon in the extension bar
         </Text>
@@ -68,13 +70,13 @@ const AuthControl = () => {
         <Text
           style={{
             fontSize: 18,
-            // fontFamily: 'Nunito_400Regular',
+            fontFamily: 'Nunito-Regular',
           }}>
           or
         </Text>
         <TouchableOpacity onPress={logOut}>
           <Text style={{color: '#545F71', textAlign: 'center', fontSize: 18}}>
-            sign out
+            as a Gest
           </Text>
         </TouchableOpacity>
       </View>
@@ -104,7 +106,11 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderWidth: 1,
   },
-  buttonText: {color: '#231A16', textAlign: 'center'},
+  buttonText: {
+    color: '#231A16',
+    textAlign: 'center',
+    fontFamily: 'Nunito-Regular',
+  },
   authHeader: {
     display: 'flex',
     flexDirection: 'column',

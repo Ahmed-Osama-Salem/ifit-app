@@ -1,3 +1,5 @@
+/* eslint-disable no-sparse-arrays */
+/* eslint-disable react-native/no-inline-styles */
 import {StatusBar} from 'react-native';
 import React from 'react';
 import {
@@ -113,7 +115,8 @@ const AuthScreen = () => {
                 style={[
                   {
                     fontSize: 40,
-                    // fontFamily: 'Nunito_700Bold',
+                    fontFamily: 'Nunito-Bold',
+                    color: '#231A16',
                     letterSpacing: 10,
                     transform: [{translateY: -40}],
                   },
@@ -139,7 +142,6 @@ const AuthScreen = () => {
         <Animated.View style={[styles.authControlContainer, animatedAuth]}>
           <AuthControl />
         </Animated.View>
-        {/* <StatusBar barStyle={'dark-content'} /> */}
       </View>
     </>
   );
@@ -172,7 +174,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 200,
+    paddingTop: 240,
     height: '100%',
   },
 });
